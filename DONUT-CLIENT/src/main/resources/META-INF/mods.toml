@@ -1,0 +1,12 @@
+modId = "donutclient"
+version = "${version}"
+
+[[dependencies]]
+    type = "minechao"
+    name = "yarn"
+    tid = "arn:legacy:yarn:stable"
+
+[[dependencies]]
+    type = "osgi"
+    name = "fabric-api"
+    tid = "net.fabricmc:fabric-api:0.88.0+1.21"

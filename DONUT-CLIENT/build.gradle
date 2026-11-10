@@ -1,0 +1,26 @@
+plugins {
+    id 'java'
+}
+
+group = 'net.donut'
+version = '1.0.0'
+
+repositories {
+    maven {
+        url = "https://maven.fabricmc.net"
+    }
+}
+
+// Try using the classic MCP mappings configuration
+// or the standard Fabric dependency notation
+dependencies {
+    // Yarn mappings - try the standard notation
+    implementation 'net.fabricmc:yarn:20240101.00'
+
+    // Fabric API - try version without +1.21 qualifier
+    implementation 'net.fabricmc:fabric-api:0.88'
+
+    runtimeOnly 'net.fabricmc:fabric-api:0.88'
+
+    testImplementation 'net.fabricmc:fabric-testing:0.88'
+}
